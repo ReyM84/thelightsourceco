@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, Flex, Spacer, Box } from "@chakra-ui/layout";
+import { Flex, Spacer, Box } from "@chakra-ui/layout";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -9,17 +10,19 @@ const Navbar = () => {
       pos="relative"
       right={{ base: "39", xl: "500" }}
       float="right"
-      top={{ sm: "7", md: "10" }}
+      top="2em"
       color="white"
       decoration="none"
     >
-      <Link className="bogo">Home</Link>
+      <Link to="/" className="bogo">
+        Home
+      </Link>
       <Spacer />
-      <Link>About Us</Link>
+      <Link to="/about">About Us</Link>
       <Spacer />
-      <Link>Portfolio</Link>
+      <Link to="#">Portfolio</Link>
       <Spacer />
-      <Link>Contact Us</Link>
+      <Link to="#">Contact Us</Link>
       <Spacer />
       <Link color="red.600">Shop Now</Link>
     </Flex>
