@@ -29,9 +29,8 @@ const Card = () => {
       {content.map((content) => {
         return (
           <Flex
-            top="2em"
-            marginLeft="4.5em"
-            w="11em"
+            margin="auto"
+            w="15em"
             display="block"
             pos="relative"
             height="auto"
