@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, SimpleGrid } from "@chakra-ui/react";
 
 let content = [
   {
@@ -25,12 +25,18 @@ let content = [
 
 const Card = () => {
   return (
-    <Box display="flex" justifyContent="center" marginLeft="5em">
+    <SimpleGrid
+      columns={{ base: 1, sm: 3 }}
+      // minChildWidth="15em"
+      spacing={{ base: "1em", sm: "1.5em", md: "4em" }}
+      maxWidth={{ base: "60%", sm: "40em", lg: "50em" }}
+      margin="auto"
+      pos="relative"
+      top={{ base: "-6em", sm: "-18em", md: "5em", lg: "-4em" }}
+    >
       {content.map((content) => {
         return (
           <Flex
-            margin="auto"
-            w="15em"
             display="block"
             pos="relative"
             height="auto"
@@ -56,7 +62,7 @@ const Card = () => {
           </Flex>
         );
       })}
-    </Box>
+    </SimpleGrid>
   );
 };
 

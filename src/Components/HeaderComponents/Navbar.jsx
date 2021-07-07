@@ -15,7 +15,7 @@ const Navbar = () => {
     <Box>
       <Flex
         display={{ base: "none", sm: "flex" }}
-        w={{ base: "0", sm: "70%", md: "60%", lg: "50%", xl: "30%" }}
+        w={{ base: "0", sm: "60%", md: "60%", lg: "50%", xl: "30%" }}
         pos="relative"
         float="right"
         color="white"
@@ -50,23 +50,23 @@ const Navbar = () => {
       >
         <Menu>
           <MenuButton
-            color="white"
+            color="red.600"
             colorScheme="transparent"
             as={IconButton}
             icon={<HamburgerIcon />}
             variant="outline"
           />
-          <MenuList>
-            <MenuItem>
+          <MenuList color="white" bg="red.600">
+            <MenuItem _focus={{ bg: "white", color: "red.600" }}>
               <Link to="/">Home</Link>
             </MenuItem>
-            <MenuItem>
+            <MenuItem _focus={{ bg: "white", color: "red.600" }}>
               <Link to="/about">About Us</Link>
             </MenuItem>
-            <MenuItem>
+            <MenuItem _focus={{ bg: "white", color: "red.600" }}>
               <Link to="/#">Portfolio</Link>
             </MenuItem>
-            <MenuItem>
+            <MenuItem _focus={{ bg: "white", color: "red.600" }}>
               <Link to="/contact">Contact Us</Link>
             </MenuItem>
           </MenuList>
