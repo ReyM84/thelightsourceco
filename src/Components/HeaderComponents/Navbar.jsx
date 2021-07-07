@@ -1,37 +1,78 @@
 import React from "react";
-import { Flex, Spacer, Text } from "@chakra-ui/layout";
 import { Link, BrowserRouter as Router } from "react-router-dom";
+import { Flex, Spacer, Box } from "@chakra-ui/layout";
+import {
+  Menu,
+  MenuList,
+  MenuItem,
+  MenuButton,
+  IconButton,
+} from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
   return (
-    <Flex
-      display={{ base: "none", sm: "flex" }}
-      w={{ base: "0", sm: "70%", md: "60%", lg: "50%", xl: "30%" }}
-      pos="relative"
-      float="right"
-      color="white"
-      top="2em"
-      decoration="none"
-      z-indez="13"
-    >
-      <Link to="/" className="bogo">
-        Home
-      </Link>
-      <Spacer />
-      <Link to="/about">About Us</Link>
-      <Spacer />
-      <Link to="#">Portfolio</Link>
-      <Spacer />
-      <Link to="/contact">Contact Us</Link>
-      <Spacer />
-      <a
-        href="https://www.emergencylight.net/"
-        style={{ color: "#C53030" }}
-        isExternal
+    <Box>
+      <Flex
+        display={{ base: "none", sm: "flex" }}
+        w={{ base: "0", sm: "70%", md: "60%", lg: "50%", xl: "30%" }}
+        pos="relative"
+        float="right"
+        color="white"
+        top="2em"
+        decoration="none"
+        z-indez="13"
       >
-        Shop Now
-      </a>
-    </Flex>
+        <Link to="/" className="bogo">
+          Home
+        </Link>
+        <Spacer />
+        <Link to="/about">About Us</Link>
+        <Spacer />
+        <Link to="#">Portfolio</Link>
+        <Spacer />
+        <Link to="/contact">Contact Us</Link>
+        <Spacer />
+        <a
+          href="https://www.emergencylight.net/"
+          style={{ color: "#C53030" }}
+          isExternal
+        >
+          Shop Now
+        </a>
+      </Flex>
+      <Box
+        pos="relative"
+        float="right"
+        top="2.5em"
+        right="-2em"
+        display={{ sm: "none" }}
+      >
+        <Menu>
+          <MenuButton
+            color="white"
+            colorScheme="transparent"
+            as={IconButton}
+            icon={<HamburgerIcon />}
+            variant="outline"
+          />
+          <MenuList>
+            <MenuItem>
+              <Link to="/">Home</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link to="/about">About Us</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link to="/#">Portfolio</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link to="/contact">Contact Us</Link>
+            </MenuItem>
+          </MenuList>
+        </Menu>
+      </Box>
+    </Box>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Image, Text } from "@chakra-ui/react";
+import { Flex, Image } from "@chakra-ui/react";
 
 const Social = () => {
   return (

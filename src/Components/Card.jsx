@@ -39,6 +39,7 @@ const Card = () => {
             border="1px solid rgba(150,170,180,0.05)"
           >
             <Image
+              alt={content.title}
               display="block"
               borderRadius="15px 15px 0 0"
               h="10em"
