@@ -1,55 +1,79 @@
 import React from "react";
+import {
+  chakra,
+  Text,
+  Input,
+  Flex,
+  Box,
+  Button,
+  Textarea,
+  Spacer,
+  HStack,
+  Heading,
+} from "@chakra-ui/react";
+import emailjs from "emailjs-com";
 import Hero from "../Components/Hero";
 import Header from "../Components/Header";
-import {
-  Input,
-  InputGroup,
-  Textarea,
-  Button,
-  FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
-  Box,
-  Grid,
-  GridItem,
-} from "@chakra-ui/react";
 
 const Contact = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_vir035j",
+        "template_lfucumi",
+        e.target,
+        "user_iyDuuN1y1xmFge4OGOwj4"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+
   return (
-    <Box>
+    <div pos="relative">
       <Header />
-      <Hero />
-      <Grid
-        templateRows="repeat(3, 1fr)"
-        templateColumns="repeat(4, 1fr)"
-        gap={5}
-        p="5"
-        border="2px solid #B1070C"
-        w="80%"
-        pos="relative"
-        // top="65vh"
-        margin="auto"
-        top="-20em"
+      <Hero z-index="-100" />
+      <Box
+        borderSpacing="2em 2em"
+        p="6"
+        boxShadow="md"
+        borderRadius="15"
+        w="60%"
+        pos="absolute"
+        left="50%"
+        top="80vh"
+        transform=" translate(-50%, -50%)"
       >
-        <GridItem colSpan={2}>
-          <Input placeholder="Name" />
-        </GridItem>
-        <GridItem colSpan={2}>
-          <Input placeholder="Email" />
-        </GridItem>
-        <GridItem colSpan={2}>
-          <Input placeholder="Phone Number" />
-        </GridItem>
-        <GridItem colSpan={2}>
-          <Input placeholder="Company" />
-        </GridItem>
-        <GridItem colSpan={4}>
-          <Textarea placeholder="Comments" />
-        </GridItem>
-        <Button float="right" />
-      </Grid>
-    </Box>
+        <HStack spacing="1em">
+          <Heading margin="auto" textAlign="center" fontSize="3xl">
+            Contact Us
+          </Heading>
+        </HStack>
+        <chakra.form onSubmit={sendEmail}>
+          <HStack>
+            <Input type="text" id="name" name="name" placeholder="Name" />
+            <Input type="text" id="email" name="email" placeholder="email" />
+          </HStack>
+          <Textarea
+            type="text"
+            id="message"
+            name="message"
+            placeholder="message"
+          />
+          <Button type="submit" color="white" bg="red.600">
+            Submit
+          </Button>
+        </chakra.form>
+      </Box>
+    </div>
   );
 };
 
