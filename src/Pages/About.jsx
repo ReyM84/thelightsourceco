@@ -4,7 +4,6 @@ import { Box } from "@chakra-ui/layout";
 import Hero from "../Components/Hero";
 import Evan from "../Components/AboutComponents/Evan";
 import Aboutinfo from "../Components/AboutComponents/Aboutinfo";
-import Riv from "../Components/Riv";
 
 const About = () => {
   return (
@@ -13,7 +12,6 @@ const About = () => {
         <Header />
         <Hero />
       </Box>
-      <Riv />
       <Box pos="relative" top={{ base: "2em" }}>
         <Evan />
         <Aboutinfo />

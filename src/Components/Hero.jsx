@@ -18,7 +18,15 @@ const Hero = () => {
     <Box position="relative" zIndex="-100">
       <HeroCarousel>
         {image.map((image) => {
-          return <Image objectFit="cover" h="60vh" w="100%" src={image.img} />;
+          return (
+            <Image
+              objectFit="cover"
+              h="60vh"
+              w="100%"
+              borderBottom="0.5em solid #81070C"
+              src={image.img}
+            />
+          );
         })}
       </HeroCarousel>
     </Box>

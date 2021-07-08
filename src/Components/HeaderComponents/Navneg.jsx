@@ -1,7 +1,10 @@
 import React from "react";
 import { Link, BrowserRouter as Router } from "react-router-dom";
-import { Flex, Spacer, Box } from "@chakra-ui/layout";
 import {
+  chakra,
+  Flex,
+  Spacer,
+  Box,
   Menu,
   MenuList,
   MenuItem,
@@ -34,13 +37,13 @@ const Navneg = () => {
         <Spacer />
         <Link to="/contact">Contact Us</Link>
         <Spacer />
-        <a
+        <chakra.a
           href="https://www.emergencylight.net/"
-          style={{ color: "#C53030" }}
+          style={{ color: "red.600" }}
           isExternal
         >
           Shop Now
-        </a>
+        </chakra.a>
       </Flex>
       <Box
         pos="relative"
@@ -69,6 +72,11 @@ const Navneg = () => {
             </MenuItem>
             <MenuItem _focus={{ bg: "white", color: "red.600" }}>
               <Link to="/contact">Contact Us</Link>
+            </MenuItem>
+            <MenuItem _focus={{ bg: "white", color: "red.600" }}>
+              <chakra.a href="https://www.emergencylight.net/">
+                Shop Now!
+              </chakra.a>
             </MenuItem>
           </MenuList>
         </Menu>
