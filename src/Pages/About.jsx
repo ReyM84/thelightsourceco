@@ -9,22 +9,16 @@ const About = () => {
   return (
     <Box>
       <Box display="block" h="60vh">
-        <Hero />
         <Header />
+        <Hero />
       </Box>
       <Box
         bg="#B1070C"
         h="0.5em"
         w="100vw"
-        pos="absolute"
-        top={{
-          base: "27.25em",
-          sm: "15.4em",
-          md: "38.4em",
-          lg: "28.8em",
-          xl: "31.75em",
-        }}
         zIndex="1000"
+        pos="absolute"
+        top="60vh"
       />
       <Box pos="relative" top={{ base: "2em" }}>
         <Evan />

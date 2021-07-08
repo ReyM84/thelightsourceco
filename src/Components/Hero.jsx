@@ -15,7 +15,7 @@ const image = [
 
 const Hero = () => {
   return (
-    <Box position="absolute" zIndex="-100">
+    <Box position="relative" zIndex="-100">
       <HeroCarousel>
         {image.map((image) => {
           return <Image objectFit="cover" h="60vh" w="100%" src={image.img} />;

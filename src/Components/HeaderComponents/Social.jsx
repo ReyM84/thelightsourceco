@@ -3,7 +3,7 @@ import { Flex, Image } from "@chakra-ui/react";
 
 const Social = () => {
   return (
-    <Flex postion="absolute" float="right">
+    <Flex postion="relative" float="right" top="1px">
       <Image
         height="8"
         p="1"

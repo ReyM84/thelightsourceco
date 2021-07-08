@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
-const Navbar = () => {
+const Navneg = () => {
   return (
     <Box>
       <Flex
@@ -20,7 +20,7 @@ const Navbar = () => {
         top="2em"
         left="30%"
         float="right"
-        color="white"
+        color="black"
         decoration="none"
         z-indez="13"
       >
@@ -77,4 +77,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navneg;
