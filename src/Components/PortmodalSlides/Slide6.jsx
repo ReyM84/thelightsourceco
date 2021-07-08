@@ -14,7 +14,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
-const Slide3 = () => {
+const Slide6 = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -30,7 +30,7 @@ const Slide3 = () => {
         margin=" 0 auto"
       >
         <Image
-          src="https://images.unsplash.com/photo-1541971875076-8f970d573be6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
+          src="https://images.unsplash.com/photo-1506059612708-99d6c258160e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80"
           w="26em"
           borderTopRadius="15"
         />
@@ -41,10 +41,15 @@ const Slide3 = () => {
           onClose={onClose}
         >
           <ModalContent>
-            <ModalHeader textAlign="center">TEST</ModalHeader>
+            <ModalHeader>
+              <Text textAlign="center">TEST</Text>
+              <Text onClick={onClose} textAlign="right">
+                X
+              </Text>
+            </ModalHeader>
             <ModalBody>
               <Image
-                src="https://images.unsplash.com/photo-1541971875076-8f970d573be6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
+                src="https://images.unsplash.com/photo-1506059612708-99d6c258160e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80"
                 w="26em"
               />
               <Text>
@@ -60,4 +65,4 @@ const Slide3 = () => {
   );
 };
 
-export default Slide3;
+export default Slide6;
