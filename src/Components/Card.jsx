@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import { Box, Flex, Image, Text, SimpleGrid } from "@chakra-ui/react";
+import { Flex, Image, Text, SimpleGrid } from "@chakra-ui/react";
 
 let content = [
   {

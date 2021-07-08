@@ -4,6 +4,7 @@ import About from "./Pages/About";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import Portfolio from "./Pages/Portfolio";
+import { chakra } from "@chakra-ui/react";
 
 const Routes = () => {
   return (
@@ -18,7 +19,12 @@ const Routes = () => {
             path="/"
             render={() => (
               <div>
-                <img src="https://letsdishrecipes.com/wp-content/uploads/2019/09/404-error-logo.jpg" />
+                <chakra.img
+                  margin="10vh auto"
+                  src="https://image.flaticon.com/icons/png/512/1244/1244083.png"
+                  alt="404 Page Not Found Image"
+                />
+                <chakra.h1>404 Page Not Found</chakra.h1>
               </div>
             )}
           />

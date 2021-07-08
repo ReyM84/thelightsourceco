@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
-import { ChakraProvider, Box, Image, Spacer } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import Routes from "../Routes";
 
 const App = () => {

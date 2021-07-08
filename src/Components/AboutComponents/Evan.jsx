@@ -24,7 +24,6 @@ const Evan = () => {
       />
       <Avatar
         size="4xl"
-        display="none"
         name="Evan Delaporte"
         src="https://www.disposetritium.com/wp-content/uploads/2014/05/evan.jpg"
         float="left"
