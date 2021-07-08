@@ -32,9 +32,10 @@ const Portmodal = () => {
   return (
     <div>
       <SimpleGrid pos="relative" top="40vh" columns="3" spacing="2em">
-        <Slide1 />
+        {/* <Slide1 />
         <Slide2 />
-        <Slide3 />
+        <Slide3 /> */}
+        {slides.map((slide) => {})}
       </SimpleGrid>
     </div>
   );

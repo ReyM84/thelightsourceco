@@ -1,13 +1,13 @@
 import React from "react";
-import { SimpleGrid, Text } from "@chakra-ui/react";
+import Portmodal from "../Components/Portmodal";
 import Headerneg from "../Components/Headerneg";
 
 const Portfolio = () => {
   return (
-    <SimpleGrid>
+    <div>
       <Headerneg />
-      <Text>TEST</Text>
-    </SimpleGrid>
+      <Portmodal />
+    </div>
   );
 };
 

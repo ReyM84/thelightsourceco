@@ -3,6 +3,7 @@ import { Box, Spacer } from "@chakra-ui/react";
 import Header from "../Components/Header";
 import Card from "../Components/Card";
 import Hero from "../Components/Hero";
+import Riv from "../Components/Riv";
 
 const Home = () => {
   return (
@@ -11,14 +12,7 @@ const Home = () => {
         <Header />
         <Hero />
       </Box>
-      <Box
-        bg="#B1070C"
-        h="0.5em"
-        w="100vw"
-        zIndex="1000"
-        pos="absolute"
-        top="60vh"
-      />
+      <Riv />
       <Spacer />
       <Card />
     </Box>
