@@ -11,6 +11,7 @@ import {
   FormHelperText,
   Box,
 } from "@chakra-ui/react";
+import Riv from "../Components/Riv";
 
 const Contact = () => {
   return (
@@ -19,6 +20,7 @@ const Contact = () => {
         <Hero />
         <Header />
       </Box>
+      <Riv />
       <Flex>
         <FormControl id="name">
           <FormLabel>Name</FormLabel>

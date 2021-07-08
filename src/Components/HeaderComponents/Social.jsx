@@ -8,6 +8,7 @@ const Social = () => {
         height="8"
         p="1"
         src="https://www.emergencylight.net/content/images/Facebook.png"
+        href="https://www.emergencylight.net/"
       />
       <Image
         height="8"
