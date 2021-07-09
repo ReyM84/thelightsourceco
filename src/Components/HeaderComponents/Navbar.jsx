@@ -14,8 +14,8 @@ const Navbar = () => {
   return (
     <Box>
       <Flex
-        display={{ base: "none", sm: "flex" }}
-        w={{ base: "0", sm: "60%", md: "60%", lg: "50%", xl: "30%" }}
+        display={{ base: "none", md: "flex" }}
+        w={{ base: "0", md: "60%", lg: "50%", xl: "30%" }}
         pos="absolute"
         top="2em"
         left="30%"
@@ -47,7 +47,7 @@ const Navbar = () => {
         float="right"
         top="2.5em"
         right="-2em"
-        display={{ sm: "none" }}
+        display={{ md: "none" }}
       >
         <Menu>
           <MenuButton

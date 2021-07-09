@@ -1,12 +1,18 @@
 import React from "react";
-import { Link, Flex } from "@chakra-ui/layout";
+import { Link, Flex, chakra } from "@chakra-ui/react";
 
 const Number = () => {
   return (
-    <Flex pos="absolute" float="right" right="20" top="1" decoration="none">
+    <Flex
+      pos="absolute"
+      float="right"
+      right="20"
+      top={{ base: "30", sm: "1" }}
+      decoration="none"
+    >
       <Link w="100" color="white" href="tel:1-800-282-5600">
-        <span style={{ color: "#C53030" }}>Call</span>
-        <span style={{ marginLeft: "0.5em" }}>800-282-5600</span>
+        <chakra.span color="red.600">Call</chakra.span>
+        <chakra.span ml="0.5em">800-282-5600</chakra.span>
       </Link>
     </Flex>
   );

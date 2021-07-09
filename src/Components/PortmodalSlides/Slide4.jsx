@@ -29,6 +29,7 @@ const Slide4 = () => {
           src="https://images.unsplash.com/photo-1505492537188-de71a52767cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
           w="26em"
           borderTopRadius="15"
+          h="70%"
         />
         <Modal
           isCentered="true"

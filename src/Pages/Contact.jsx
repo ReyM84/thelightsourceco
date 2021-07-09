@@ -1,14 +1,12 @@
 import React from "react";
 import {
   chakra,
-  Text,
   Input,
-  Flex,
   Box,
   Button,
   Textarea,
-  Spacer,
   HStack,
+  VStack,
   Heading,
 } from "@chakra-ui/react";
 import emailjs from "emailjs-com";
@@ -44,7 +42,7 @@ const Contact = () => {
       <Box
         borderSpacing="2em 2em"
         p="6"
-        boxShadow="md"
+        boxShadow="2xl"
         borderRadius="15"
         w="60%"
         pos="absolute"
@@ -58,17 +56,47 @@ const Contact = () => {
           </Heading>
         </HStack>
         <chakra.form onSubmit={sendEmail}>
-          <HStack>
+          <HStack marginTop="3">
             <Input type="text" id="name" name="name" placeholder="Name" />
-            <Input type="text" id="email" name="email" placeholder="email" />
+            <Input type="email" id="email" name="email" placeholder="Email" />
           </HStack>
-          <Textarea
-            type="text"
-            id="message"
-            name="message"
-            placeholder="message"
-          />
-          <Button type="submit" color="white" bg="red.600">
+          <HStack marginTop="3">
+            <Input
+              type="tel"
+              id="number"
+              name="number"
+              placeholder="Phone Number"
+            />
+            <Input
+              type="text"
+              id="company"
+              name="company"
+              placeholder="Company Name"
+            />
+          </HStack>
+          <VStack>
+            <Input
+              mt="3"
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+            />
+            <Textarea
+              marginTop="3"
+              type="text"
+              id="message"
+              name="message"
+              placeholder="Message"
+            />
+          </VStack>
+          <Button
+            type="submit"
+            color="white"
+            bg="red.600"
+            float="right"
+            marginTop="3"
+          >
             Submit
           </Button>
         </chakra.form>

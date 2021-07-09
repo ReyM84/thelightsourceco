@@ -39,7 +39,9 @@ const Card = () => {
             display="block"
             pos="relative"
             height="auto"
-            boxShadow=" 0 7px 30px -10px rgba(150,170,180,0.5)"
+            justifyContent="center"
+            alignItems="center"
+            boxShadow="xl"
             borderRadius="15"
             border="1px solid rgba(150,170,180,0.05)"
           >
