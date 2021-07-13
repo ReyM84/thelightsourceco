@@ -15,12 +15,13 @@ const Navbar = () => {
     <Box>
       <Flex
         display={{ base: "none", md: "flex" }}
-        w={{ base: "0", md: "60%", lg: "50%", xl: "30%" }}
+        w={{ base: "0", md: "60%", lg: "60%", xl: "70%" }}
         pos="absolute"
-        top="2em"
-        left="30%"
+        top={{ base: "8", lg: "6" }}
+        left={{ base: "30%", lg: "25%" }}
         float="right"
         color="white"
+        fontSize={{ lg: "24", xl: "28" }}
         decoration="none"
         z-indez="13"
       >

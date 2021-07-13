@@ -12,7 +12,12 @@ const About = () => {
         <Header />
         <Hero />
       </Box>
-      <Box pos="relative" top={{ base: "2em" }}>
+      <Box
+        w={{ base: "80%" }}
+        pos="relative"
+        top={{ base: "2em" }}
+        margin="0 auto"
+      >
         <Evan />
         <Aboutinfo />
       </Box>

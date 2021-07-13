@@ -17,13 +17,14 @@ const Navneg = () => {
   return (
     <Box>
       <Flex
-        display={{ base: "none", sm: "flex" }}
-        w={{ base: "0", sm: "60%", md: "60%", lg: "50%", xl: "30%" }}
+        display={{ base: "none", md: "flex" }}
+        w={{ base: "0", md: "60%", lg: "60%", xl: "70%" }}
         pos="absolute"
-        top="2em"
-        left="30%"
+        top={{ base: "8", lg: "6" }}
+        left={{ base: "30%", lg: "25%" }}
         float="right"
         color="black"
+        fontSize={{ lg: "24", xl: "28" }}
         decoration="none"
         z-indez="13"
       >
@@ -39,7 +40,7 @@ const Navneg = () => {
         <Spacer />
         <chakra.a
           href="https://www.emergencylight.net/"
-          style={{ color: "red.600" }}
+          color="red.600"
           isExternal
         >
           Shop Now

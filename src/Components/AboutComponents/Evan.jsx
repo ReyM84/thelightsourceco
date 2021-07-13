@@ -6,12 +6,10 @@ const Evan = () => {
     <Box>
       <Avatar
         display={{ sm: "none" }}
-        size="xl"
+        size="lg"
         name="Evan Delaporte"
         src="https://www.disposetritium.com/wp-content/uploads/2014/05/evan.jpg"
         float="left"
-        top={{ base: " 0em" }}
-        left={{ base: "2%" }}
       />
       <Avatar
         size="2xl"

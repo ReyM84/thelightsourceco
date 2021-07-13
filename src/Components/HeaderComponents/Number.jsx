@@ -10,7 +10,12 @@ const Number = () => {
       top={{ base: "30", sm: "1" }}
       decoration="none"
     >
-      <Link w="100" color="white" href="tel:1-800-282-5600">
+      <Link
+        textDecoration="none"
+        w="100"
+        color="white"
+        href="tel:1-800-282-5600"
+      >
         <chakra.span color="red.600">Call</chakra.span>
         <chakra.span ml="0.5em">800-282-5600</chakra.span>
       </Link>

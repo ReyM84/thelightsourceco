@@ -57,8 +57,20 @@ const Contact = () => {
         </HStack>
         <chakra.form onSubmit={sendEmail}>
           <HStack marginTop="3">
-            <Input type="text" id="name" name="name" placeholder="Name" />
-            <Input type="email" id="email" name="email" placeholder="Email" />
+            <Input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              focusBorderColor="red.600"
+            />
+            <Input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              focusBorderColor="red.600"
+            />
           </HStack>
           <HStack marginTop="3">
             <Input
@@ -66,12 +78,14 @@ const Contact = () => {
               id="number"
               name="number"
               placeholder="Phone Number"
+              focusBorderColor="red.600"
             />
             <Input
               type="text"
               id="company"
               name="company"
               placeholder="Company Name"
+              focusBorderColor="red.600"
             />
           </HStack>
           <VStack>
@@ -81,6 +95,7 @@ const Contact = () => {
               id="subject"
               name="subject"
               placeholder="Subject"
+              focusBorderColor="red.600"
             />
             <Textarea
               marginTop="3"
@@ -88,6 +103,7 @@ const Contact = () => {
               id="message"
               name="message"
               placeholder="Message"
+              focusBorderColor="red.600"
             />
           </VStack>
           <Button

@@ -1,5 +1,12 @@
 import React from "react";
-import { Flex, Image, Text, SimpleGrid } from "@chakra-ui/react";
+import {
+  Flex,
+  Image,
+  Text,
+  SimpleGrid,
+  ScaleFade,
+  useDisclosure,
+} from "@chakra-ui/react";
 
 let content = [
   {
@@ -25,13 +32,14 @@ let content = [
 const Card = () => {
   return (
     <SimpleGrid
-      columns={{ base: 1, sm: 3 }}
+      columns={{ base: 1, sm: 2, md: 3 }}
       // minChildWidth="15em"
-      spacing={{ base: "1em", sm: "1.5em", md: "4em" }}
-      maxWidth={{ base: "60%", sm: "40em", lg: "50em" }}
+      spacing={{ base: "4", sm: "6", md: "16" }}
+      width="80%"
       margin="auto"
       pos="relative"
-      top={{ base: "-6em", sm: "-18em", md: "5em", lg: "-4em" }}
+      top={{ base: "-20", sm: "-10", md: "-8", lg: "8", xl: "56" }}
+      p="4"
     >
       {content.map((content) => {
         return (
@@ -44,6 +52,7 @@ const Card = () => {
             boxShadow="xl"
             borderRadius="15"
             border="1px solid rgba(150,170,180,0.05)"
+            w={{ base: "48", lg: "60" }}
           >
             <Image
               alt={content.title}

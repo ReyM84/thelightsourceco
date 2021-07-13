@@ -3,7 +3,12 @@ import { Text } from "@chakra-ui/react";
 
 const Aboutinfo = () => {
   return (
-    <Text w={{ base: "70%" }} pos="relative" left={{ sm: "1em" }} margin="auto">
+    <Text
+      pos="relative"
+      left={{ sm: "4" }}
+      fontSize={{ lg: "2xl" }}
+      margin="auto"
+    >
       Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De
       carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel
       maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi
